@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KidsLearn - Learning Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>KidsLearn</h1>
+        <p>Learn, Play and Grow!</p>
+    </header>
+
+    <nav>
+        <a href="#study">Study Planner</a>
+        <a href="#order">Learning Kit</a>
+        <a href="#buddy">My Buddy</a>
+    </nav>
+
+    <main>
+
+        <!-- Section 1: Study Time Calculator -->
+        <section id="study" class="card">
+            <h2>📚 Study Time Calculator</h2>
+            <p>Divide your study time into different activities.</p>
+
+            <label>Total Study Time (Minutes)</label>
+            <input type="number" id="totalTime" value="120" min="1">
+
+            <div class="input-grid">
+                <div>
+                    <label>Reading (%)</label>
+                    <input type="number" id="reading" value="25">
+                </div>
+
+                <div>
+                    <label>Maths (%)</label>
+                    <input type="number" id="maths" value="25">
+                </div>
+
+                <div>
+                    <label>Science (%)</label>
+                    <input type="number" id="science" value="25">
+                </div>
+
+                <div>
+                    <label>Break (%)</label>
+                    <input type="number" id="breakTime" value="25">
+                </div>
+            </div>
+
+            <button id="calculateStudy">Calculate Time</button>
+
+            <div id="studyResult" class="result"></div>
+        </section>
+
+
+        <!-- Section 2: Learning Kit Order -->
+        <section id="order" class="card">
+            <h2>🎒 Learning Kit Order</h2>
+            <p>Choose your learning kit and calculate the total price.</p>
+
+            <label>Select Learning Kit</label>
+
+            <select id="kitType">
+                <option value="100">Drawing Kit - ₹100</option>
+                <option value="150">Science Kit - ₹150</option>
+                <option value="200">Maths Kit - ₹200</option>
+            </select>
+
+            <label>Quantity</label>
+            <input type="number" id="quantity" value="1" min="1">
+
+            <button id="calculateOrder">Calculate Amount</button>
+
+            <div id="orderResult" class="result"></div>
+        </section>
+
+
+        <!-- Section 3: Customize Learning Buddy -->
+        <section id="buddy" class="card">
+            <h2>🤖 Customize Your Learning Buddy</h2>
+            <p>Change your learning buddy's appearance!</p>
+
+            <div class="buddy-area">
+                <div id="buddyPreview" class="buddy">
+                    <div class="buddy-eyes">
+                        <span>●</span>
+                        <span>●</span>
+                    </div>
+                    <div id="glasses" class="buddy-glasses"></div>
+                    <div class="buddy-mouth">⌣</div>
+                </div>
+            </div>
+
+            <label>Buddy Colour</label>
+            <select id="buddyColor">
+                <option value="#ffca28">Yellow</option>
+                <option value="#42a5f5">Blue</option>
+                <option value="#66bb6a">Green</option>
+                <option value="#ef5350">Red</option>
+                <option value="#ab47bc">Purple</option>
+            </select>
+
+            <label>Glass Tint</label>
+            <select id="glassTint">
+                <option value="rgba(255,255,255,0.3)">Light</option>
+                <option value="rgba(0,0,0,0.6)">Dark</option>
+                <option value="rgba(0,150,255,0.6)">Blue</option>
+            </select>
+
+            <label>Buddy Size</label>
+            <input type="range" id="buddySize" min="130" max="220" value="160">
+
+            <button id="applyBuddy">Apply Changes</button>
+            <button id="moveBuddy">Make Buddy Jump</button>
+
+        </section>
+
+
+        <!-- jQuery Slide Toggle -->
+        <section class="card">
+            <h2>💡 Learning Tip</h2>
+
+            <button id="tipButton">Show / Hide Learning Tip</button>
+
+            <div id="tipContent">
+                <p>Practice every day and never stop learning!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 KidsLearn - Happy Learning!</p>
+    </footer>
+
+</body>
+</html>

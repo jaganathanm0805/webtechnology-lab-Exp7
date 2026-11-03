@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8ff;
+    color: #333;
+}
+
+header {
+    background: #6c5ce7;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+nav {
+    background: #4834d4;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 10px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000015;
+}
+
+.card h2 {
+    color: #6c5ce7;
+    margin-bottom: 12px;
+}
+
+.card p {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+button {
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #4834d4;
+}
+
+.result {
+    background: #e8f5e9;
+    padding: 15px;
+    margin-top: 18px;
+    border-radius: 8px;
+    line-height: 1.8;
+}
+
+.buddy-area {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.buddy {
+    width: 160px;
+    height: 160px;
+    background: #ffca28;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buddy-eyes {
+    position: absolute;
+    top: 45px;
+    display: flex;
+    gap: 35px;
+    font-size: 25px;
+    color: #333;
+}
+
+.buddy-glasses {
+    position: absolute;
+    top: 48px;
+    width: 90px;
+    height: 18px;
+    background: rgba(255,255,255,0.3);
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.buddy-mouth {
+    position: absolute;
+    top: 85px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#tipContent {
+    display: none;
+    background: #fff3cd;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    background: #4834d4;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 600px) {
+    .input-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+}
